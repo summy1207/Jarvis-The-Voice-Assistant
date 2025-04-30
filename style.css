@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
+}
+
+.image-container h1 {
+  color: #00bcd4;
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.image-container p {
+  color: #888;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(202, 253, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
+  transition: background 0.3s ease;
+}
+
+.input-container:hover {
+  background: rgba(202, 253, 255, 0.2);
+}
+
+.talk {
+  background: #00bcd4;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.talk i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.talk:hover {
+  background: #0097a7;
+}
+
+.content {
+  font-size: 1.2em;
+  color: #aed0d0;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .image-container h1 {
+    font-size: 2em;
+  }
+
+  .image-container p {
+    font-size: 1em;
+  }
+
+  .content {
+    font-size: 1em;
+  }
+}
